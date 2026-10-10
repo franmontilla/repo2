@@ -3,7 +3,7 @@ function convertirCF() {
     let temp = parseFloat(prompt("Temperatura:"));
 
     if (CF.toUpperCase() == "F") {
-        let cent = (temp - 32) / (9 / 5);
+        let cent = (temp - 32) * 5 / 9;
         console.log(`${temp}F -> ${cent}C`);
     } else if (CF.toUpperCase() == "C") {
         let fh = (9 / 5) * temp + 32;
@@ -12,4 +12,3 @@ function convertirCF() {
         console.log("Només es pot C ó F");
     }
 }
-
